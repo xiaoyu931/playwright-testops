@@ -26,4 +26,4 @@ def test_open_testops_home(page):
     flow.open_home_page()
     result = flow.check_home_loaded()
 
-    assert result
+    assert result.success, result.message
